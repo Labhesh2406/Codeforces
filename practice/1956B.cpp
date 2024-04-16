@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     cin >> t;
     while (t--)
     {
-        long long int n;
+        int n;
         cin >> n;
         vector<long long> arr(n);
         int cnt = 0;
