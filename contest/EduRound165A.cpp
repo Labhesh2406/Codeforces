@@ -5,6 +5,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
 	int t;
+	int a = 0;
 	cin >> t;
 	while (t--) {
 		int n;
