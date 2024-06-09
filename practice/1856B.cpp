@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int main(int argc, char const *argv[])
 {
 	int t;
@@ -7,23 +8,26 @@ int main(int argc, char const *argv[])
 	while (t--) {
 		int n;
 		cin >> n;
-		long long sum = 0;
-		vector<int> a(n);
+		vector<int>a(n);
+		long long cnt = 0, sm = 0;
 		for (int i = 0; i < n; i++) {
 			cin >> a[i];
+			if (a[i] == 1) {
+				cnt++;
+			}
+			else {
+				sm = sm + (a[i] - 1);
+			}
 		}
-		for (int i = 0; i < n; i++ ) {
-			sum = sum + a[i];
-		}
-		for (int i = 0; i < n; i++) {
-			if (a[i] == 1) sum -= 2;
-			else sum -= 1;
-		}
-		if (n == 1 || sum < 0) {
+		if (n == 1) {
 			cout << "NO" << endl;
+			continue;
+		}
+		if (sm >= cnt) {
+			cout << "YES" << endl;
 		}
 		else {
-			cout << "YES" << endl;
+			cout << "NO" << endl;
 		}
 	}
 	return 0;
