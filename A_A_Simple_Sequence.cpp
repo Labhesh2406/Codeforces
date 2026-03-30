@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using ll = long long;
+using namespace std;
+
+void solve() {
+    ll n; cin >> n;
+    for(int i = n; i>= 1; i--) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while(t--) {
+        solve();
+    }
+    return 0;
+}
