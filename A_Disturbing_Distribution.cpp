@@ -5,7 +5,7 @@ using namespace std;
 
 void solve() {
     ll n; cin >> n;
-    vector<ll> a(n + 1); 
+    vector<ll> a(n + 1);
     for(int i = 1; i<= n; i++) cin >> a[i];
     ll ans = 0;
     if(a[n] == 1) ans++;
